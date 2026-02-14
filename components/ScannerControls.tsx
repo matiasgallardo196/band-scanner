@@ -38,29 +38,28 @@ export function ScannerControls({
         <button
           onClick={onConnect}
           disabled={!canSerial}
-          className="group relative px-6 py-3 bg-white text-black font-semibold rounded-xl hover:bg-neutral-200 transition-all active:scale-95 disabled:opacity-50 disabled:pointer-events-none flex items-center gap-2"
+          className="group relative px-8 py-3 bg-white text-royal-950 font-bold rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] hover:bg-gray-100 transition-all active:scale-95 disabled:opacity-50 disabled:pointer-events-none flex items-center gap-2 tracking-wide"
         >
-          <Plug size={18} />
-          Connect Reader
-          <div className="absolute inset-0 bg-white/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+          <Plug size={20} />
+          CONNECT READER
         </button>
       ) : (
         <button
           onClick={onDisconnect}
-          className="px-6 py-3 bg-red-500/10 border border-red-500/20 text-red-400 font-semibold rounded-xl hover:bg-red-500/20 transition-all active:scale-95 flex items-center gap-2"
+          className="px-8 py-3 bg-red-500/10 border border-red-500/30 text-red-200 font-bold rounded-full hover:bg-red-500/20 transition-all active:scale-95 flex items-center gap-2 tracking-wide"
         >
-          <PlugZap size={18} />
-          Disconnect
+          <PlugZap size={20} />
+          DISCONNECT
         </button>
       )}
 
       <button
         onClick={handleCopyFinal}
         disabled={!hasFinalCode}
-        className="px-6 py-3 bg-white/5 border border-white/10 text-white font-medium rounded-xl hover:bg-white/10 transition-all active:scale-95 disabled:opacity-50 disabled:pointer-events-none flex items-center gap-2"
+        className="px-8 py-3 bg-royal-800/50 border border-royal-700 text-white font-bold rounded-full hover:bg-royal-700/50 hover:border-royal-600 transition-all active:scale-95 disabled:opacity-50 disabled:pointer-events-none flex items-center gap-2 tracking-wide backdrop-blur-md"
       >
-        {isCopied ? <CheckCircle size={18} className="text-green-400" /> : <Copy size={18} />}
-        Copy Final
+        {isCopied ? <CheckCircle size={20} className="text-green-400" /> : <Copy size={20} />}
+        COPY FINAL CODE
       </button>
     </div>
   );

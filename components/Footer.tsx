@@ -3,7 +3,7 @@ import { Linkedin, Mail, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black/80 backdrop-blur-md border-t border-white/10 py-4 px-6 md:px-12 text-white/70 text-xs md:text-sm fixed bottom-0 left-0 right-0 z-50">
+    <footer className="w-full bg-royal-950/80 backdrop-blur-md border-t border-royal-800/50 py-6 px-6 md:px-12 text-royal-200/60 text-xs fixed bottom-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="font-medium tracking-wide">
           DEVELOPED BY <span className="text-white font-bold">Matias Gallardo</span> - Full-stack development & design
